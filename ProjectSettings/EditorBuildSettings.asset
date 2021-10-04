@@ -4,4 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/uOSC/Examples/Scenes/Client.unity
+    guid: 4050a1969537d4d0c8a7c07807e1c44c
+  - enabled: 0
+    path: Assets/uOSC/Examples/Scenes/Server.unity
+    guid: 664592c5d4b0c441ea8b1c68adb4de2f
+  m_configObjects: {}

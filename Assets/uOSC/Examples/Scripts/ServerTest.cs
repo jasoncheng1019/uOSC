@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace uOSC
 {
@@ -6,6 +7,9 @@ namespace uOSC
 [RequireComponent(typeof(uOscServer))]
 public class ServerTest : MonoBehaviour
 {
+
+    public Text txt;
+
     void Start()
     {
         var server = GetComponent<uOscServer>();
@@ -25,6 +29,8 @@ public class ServerTest : MonoBehaviour
         {
             msg += value.GetString() + " ";
         }
+
+        txt.text = msg;
 
         Debug.Log(msg);
     }

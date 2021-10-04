@@ -12,7 +12,7 @@ public class ClientBundleTest : MonoBehaviour
 
         var bundle1 = new Bundle(Timestamp.Now);
         bundle1.Add(new Message("/uOSC/root/bundle1/message1", 123, "hoge", new byte[] { 1, 2, 3, 4 }));
-        bundle1.Add(new Message("/uOSC/root/bundle1/message2", 1.2345f));
+        bundle1.Add(new Message("/uOSC/root/bundle1/message2", 1.2345f, 9, 20));
         bundle1.Add(new Message("/uOSC/root/bundle1/message3", "abcdefghijklmn"));
 
         var date2 = System.DateTime.UtcNow.AddSeconds(10);
